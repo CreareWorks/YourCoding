@@ -1,0 +1,52 @@
+@import "config";
+
+.header{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 94px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  background-color: #fff;
+  &-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    &:hover {
+      opacity: 0.6;
+    }
+    }
+  &-ttl {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 16px;
+  }
+  &-nav {
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        text-align: center;
+        margin-right: 45px;
+        list-style: none;
+        &:hover {
+          opacity: 0.6;
+        }
+        a {
+          color: $txt-color;
+        }
+      }
+    }
+  }
+}
